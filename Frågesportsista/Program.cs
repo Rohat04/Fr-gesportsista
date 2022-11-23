@@ -1,12 +1,17 @@
 ﻿using System;
 
-namespace Frågesportsista
+string name;
+string input;
+string[] questions = new string[] { "Hej, vad heter du?", "Ungefär hur många miligram protein finns det i 5 mililiter sädesvätska", "Hur länge varar ett average samlag?" };
+
+Console.WriteLine(questions[0]);
+name = Console.ReadLine();
+Console.WriteLine($"Wow, vilket vackert och poetiskt namn du har, {name}!");
+Console.WriteLine($"Är {name} speciel enligt dina beräkningar?");
+
+input = Console.ReadLine();
+
+if (input == "ja")
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+    Console.WriteLine("KORREKT!");
 }
