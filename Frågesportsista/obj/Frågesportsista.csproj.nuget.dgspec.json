@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\ozkoc.rohat\\Documents\\programering\\3 Programmering\\Frågesportsista\\Frågesportsista\\Frågesportsista.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\ozkoc.rohat\\Documents\\programering\\3 Programmering\\Frågesportsista\\Frågesportsista\\Frågesportsista.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\ozkoc.rohat\\Documents\\programering\\3 Programmering\\Frågesportsista\\Frågesportsista\\Frågesportsista.csproj",
+        "projectName": "Frågesportsista",
+        "projectPath": "c:\\Users\\ozkoc.rohat\\Documents\\programering\\3 Programmering\\Frågesportsista\\Frågesportsista\\Frågesportsista.csproj",
+        "packagesPath": "C:\\Users\\ozkoc.rohat\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\ozkoc.rohat\\Documents\\programering\\3 Programmering\\Frågesportsista\\Frågesportsista\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ozkoc.rohat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
