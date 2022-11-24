@@ -18,3 +18,14 @@ if (input == "ja")
     points += 1;
 
 }
+
+else if (input == "nej")
+{
+    Console.WriteLine("FEL!, du får ett försök till...");
+    input = Console.ReadLine();
+}
+
+Console.WriteLine(questions[1]);
+string answer = "";
+
+bool validAnswer = false;
