@@ -3,7 +3,7 @@
 string name;
 string input;
 int points = 0;
-string[] questions = new string[] { "Hej, vad heter du?", "Ungefär hur många miligram protein finns det i 5 mililiter sädesvätska", "Hur länge varar ett average samlag?" };
+string[] questions = new string[] { "Hej, vad heter du?", "Ungefär hur många miligram protein finns det i 5 mililiter spärma", "Hur länge varar ett average samlag?" };
 
 Console.WriteLine(questions[0]);
 name = Console.ReadLine();
@@ -12,7 +12,7 @@ Console.WriteLine($"Är {name} speciel enligt dina beräkningar?");
 
 input = Console.ReadLine();
 
-if (input == "ja")
+if (input == "ja") 
 {
     Console.WriteLine("KORREKT!");
     points += 1;
@@ -29,3 +29,17 @@ Console.WriteLine(questions[1]);
 string answer = "";
 
 bool validAnswer = false;
+
+while (!validAnswer)
+{
+    Console.WriteLine("Välj 252mg eller 534mg");
+
+    answer = Console.ReadLine();
+
+    validAnswer = answer == "252mg" || answer == "252" || answer == "534mg" || answer == "534";
+
+    if (!validAnswer)
+    {
+        Console.WriteLine("Du måste välja 252mg eller 534mg");
+    }
+}
