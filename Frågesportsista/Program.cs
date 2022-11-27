@@ -49,4 +49,4 @@ if (answer == "252mg" || answer == "252")
     Console.WriteLine("Korrekt");
     points += 1;
 }
-else if (answer == "534mg" || answer
+else if (answer == "534mg" || answer == "534")
