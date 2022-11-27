@@ -43,3 +43,10 @@ while (!validAnswer)
         Console.WriteLine("Du måste välja 252mg eller 534mg");
     }
 }
+
+if (answer == "252mg" || answer == "252")
+{
+    Console.WriteLine("Korrekt");
+    points += 1;
+}
+else if (answer == "534mg" || answer
