@@ -7,8 +7,8 @@ string[] questions = new string[] { "Hej, vad heter du?", "Ungefär hur många m
 
 Console.WriteLine(questions[0]);
 name = Console.ReadLine();
-Console.WriteLine($"Wow, vilket vackert och poetiskt namn du har, {name}!");
-Console.WriteLine($"Är {name} speciel enligt dina beräkningar?");
+Console.WriteLine($"Wow, vilket fult och vidrigt namn du har, {name}!");
+Console.WriteLine($"{name}, Jag hoppas en giraff biter dig!");
 
 input = Console.ReadLine();
 
@@ -81,5 +81,9 @@ void Question3()
     }
     else if (answer2 == "10-30" || answer2 == "10-30minuter")
 {
-    
+       Console.WriteLine("Fel");
+    }
 }
+
+Console.WriteLine($"Du fick {points}/{questions.Length} poäng");
+Console.ReadLine();
