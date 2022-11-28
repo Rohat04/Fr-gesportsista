@@ -73,5 +73,13 @@ void Question3()
         {
             Console.WriteLine("Du måste välja 3-15 eller 10-30");
         }
+}
+        if (answer2 == "3-15" || answer2 == "3-15minuter")
+    {
+        Console.WriteLine("Korrekt");
+        points += 1;
     }
+    else if (answer2 == "10-30" || answer2 == "10-30minuter")
+{
     
+}
