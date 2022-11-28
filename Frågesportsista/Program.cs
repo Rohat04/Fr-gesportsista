@@ -63,3 +63,15 @@ void Question3()
     bool validAnswer2 = false;
 
     while (!validAnswer2)
+{
+        Console.WriteLine("3-15 minuter eller 10-30 minuter");
+
+        answer2 = Console.ReadLine();
+
+        validAnswer2 = answer2 == "3-15" || answer2 == "3-15minuter" || answer2 == "10-30" || answer2 == "10-30minuter";
+ if (!validAnswer2)
+        {
+            Console.WriteLine("Du måste välja 3-15 eller 10-30");
+        }
+    }
+    
