@@ -50,3 +50,16 @@ if (answer == "252mg" || answer == "252")
     points += 1;
 }
 else if (answer == "534mg" || answer == "534")
+{
+    Console.WriteLine("Fel");
+}
+Question3();
+
+void Question3()
+{
+    Console.WriteLine(questions[2]);
+    string answer2 = "";
+
+    bool validAnswer2 = false;
+
+    while (!validAnswer2)
