@@ -3,6 +3,7 @@
 string name;
 string input;
 int points = 0;
+//Namn registrering
 string[] questions = new string[] { "Hej, vad heter du?", "Ungefär hur många miligram protein finns det i 5 mililiter spärma", "Hur länge varar ett average samlag?" };
 
 Console.WriteLine(questions[0]);
