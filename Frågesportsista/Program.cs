@@ -1,30 +1,19 @@
 ﻿using System;
 
+//För namn registreringen
 string name;
-string input;
 int points = 0;
-//Namn registrering
-string[] questions = new string[] { "Hej, vad heter du?", "Ungefär hur många miligram protein finns det i 5 mililiter spärma", "Hur länge varar ett average samlag?" };
+string[] questions = new string[] { "Hej, vad heter du?", "Ungefär hur många miligram protein finns det i 5 mililiter spärma", "Hur många barn har Rohat?", "Hur länge varar ett average samlag?", };
 
 Console.WriteLine(questions[0]);
 name = Console.ReadLine();
+
+//Namn registrering
 Console.WriteLine($"Wow, vilket fult och vidrigt namn du har, {name}!");
-Console.WriteLine($"{name}, Jag hoppas en giraff biter dig!");
+Console.WriteLine($"{name}, jag hoppas en giraff biter dig!");
 
-input = Console.ReadLine();
+Console.ReadLine();
 
-if (input == "ja") 
-{
-    Console.WriteLine("KORREKT!");
-    points += 1;
-
-}
-
-else if (input == "nej")
-{
-    Console.WriteLine("FEL!, du får ett försök till...");
-    input = Console.ReadLine();
-}
 
 Console.WriteLine(questions[1]);
 string answer = "";
@@ -36,55 +25,84 @@ while (!validAnswer)
     Console.WriteLine("Välj 252mg eller 534mg");
 
     answer = Console.ReadLine();
-
-    validAnswer = answer == "252mg" || answer == "252" || answer == "534mg" || answer == "534";
+    //Fler alternativ för vad som accepteras som svar
+    validAnswer = answer == "252mg" || answer == "252" || answer == "252 mg" || answer == "534mg" || answer == "534" || answer == "534 mg";
 
     if (!validAnswer)
     {
         Console.WriteLine("Du måste välja 252mg eller 534mg");
     }
 }
-
-if (answer == "252mg" || answer == "252")
+//Vad som accepteras som korrekt och fel
+if (answer == "252mg" || answer == "252" || answer == "252 mg")
 {
     Console.WriteLine("Korrekt");
     points += 1;
 }
-else if (answer == "534mg" || answer == "534")
+else if (answer == "534mg" || answer == "534" || answer == "534 mg")
 {
     Console.WriteLine("Fel");
 }
-Question3();
 
+Console.WriteLine(questions[2]);
+string answer2 = "";
+
+bool validAnswer2 = false;
+
+while (!validAnswer2)
+{
+    Console.WriteLine("4 eller 0?");
+
+    answer2 = Console.ReadLine();
+    //Fler alternativ för vad som accepteras som svar
+    validAnswer = answer2 == "0" || answer2 == "0";
+
+    if (!validAnswer2)
+    {
+        Console.WriteLine("Du måste välja mellan för många eller 0");
+    }
+}
+//Vad som accepteras som korrekt och fel
+if (answer2 == "För många")
+{
+    Console.WriteLine("Korrekt");
+    points += 1;
+}
+else if (answer2 == "0" || answer2 == "3,5" || answer2 == "22")
+{
+    Console.WriteLine("Fel");
+}
+
+Question3();
 void Question3()
 {
-    Console.WriteLine(questions[2]);
-    string answer2 = "";
+    Console.WriteLine(questions[3]);
+    string answer3 = "";
 
-    bool validAnswer2 = false;
+    bool validAnswer3 = false;
 
-    while (!validAnswer2)
-{
+    while (!validAnswer3)
+    {
         Console.WriteLine("3-15 minuter eller 10-30 minuter");
 
-        answer2 = Console.ReadLine();
+        answer3 = Console.ReadLine();
 
-        validAnswer2 = answer2 == "3-15" || answer2 == "3-15minuter" || answer2 == "10-30" || answer2 == "10-30minuter";
- if (!validAnswer2)
+        validAnswer3 = answer3 == "3-15" || answer3 == "3-15minuter" || answer3 == "3-15 minuter" || answer3 == "3-15 min" || answer3 == "10-30" || answer3 == "10-30min" || answer3 == "10-30minuter" || answer3 == "10-30 minuter" || answer3 == "10-30 min";
+        if (!validAnswer3)
         {
             Console.WriteLine("Du måste välja 3-15 eller 10-30");
         }
-}
-        if (answer2 == "3-15" || answer2 == "3-15minuter")
+    }
+    if (answer3 == "3-15" || answer3 == "3-15min" || answer3 == "3-15 min" || answer3 == "3-15minuter" || answer3 == "3-15 minuter")
     {
         Console.WriteLine("Korrekt");
         points += 1;
     }
-    else if (answer2 == "10-30" || answer2 == "10-30minuter")
-{
-       Console.WriteLine("Fel");
+    else if (answer3 == "10-30" || answer3 == "10-30min" || answer3 == "10-30minuter" || answer3 == "10-30 min" || answer3 == "10-30 minuter")
+    {
+        Console.WriteLine("Fel");
     }
 }
 
-Console.WriteLine($"Du fick {points}/{questions.Length} poäng");
+Console.WriteLine($"Du, {name}, fick {points}/{questions.Length} poäng");
 Console.ReadLine();
