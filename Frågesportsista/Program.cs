@@ -55,7 +55,7 @@ while (!validAnswer2)
 
     answer2 = Console.ReadLine();
     //Fler alternativ för vad som accepteras som svar
-    validAnswer = answer2 == "0" || answer2 == "0";
+    validAnswer2 = answer2 == "4" || answer2 == "0";
 
     if (!validAnswer2)
     {
