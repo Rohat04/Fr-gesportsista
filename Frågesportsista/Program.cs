@@ -3,18 +3,19 @@
 //För namn registreringen
 string name;
 int points = 0;
+//Alla frågor bakom "," (Komma tecken) är registrerade frågor
 string[] questions = new string[] { "Hej, vad heter du?", "Ungefär hur många miligram protein finns det i 5 mililiter spärma", "Hur många barn har Rohat?", "Hur länge varar ett average samlag?", };
 
 Console.WriteLine(questions[0]);
 name = Console.ReadLine();
 
-//Namn registrering
+//Sparar namnet du skrev och använder det för att förolämpa dig
 Console.WriteLine($"Wow, vilket fult och vidrigt namn du har, {name}!");
 Console.WriteLine($"{name}, jag hoppas en giraff biter dig!");
 
 Console.ReadLine();
 
-
+//Fråga ett
 Console.WriteLine(questions[1]);
 string answer = "";
 
@@ -103,6 +104,6 @@ void Question3()
         Console.WriteLine("Fel");
     }
 }
-
+//
 Console.WriteLine($"Du, {name}, fick {points}/{questions.Length} poäng");
 Console.ReadLine();
