@@ -104,6 +104,27 @@ void Question3()
         Console.WriteLine("Fel");
     }
 }
-//
+
 Console.WriteLine($"Du, {name}, fick {points}/{questions.Length} poäng");
 Console.ReadLine();
+
+/*
+Skapa variabel för namn, poäng och alla frågor i en lista
+
+Skriva ut första frågan
+Spara namnet
+
+Skriva fina saker om deras namn...
+
+Fråga första frågan 
+Skapa en variabel som kollar om svaret är rätt
+Ta in deras svar men loop'a det tills man väljer ett giltigt svar, annars skriv att de måste välja ett giltigt svar
+
+Om det är rätt, ge dem poäng och säg korrekt
+Annars skriv fel
+
+
+Fråga andra frågan 
+Skapa en variabel som kollar om svaret är rätt
+Ta in deras svar men loop'a det tills man väljer ett giltigt svar, annars skriv att de måste välja ett giltigt svar
+*/

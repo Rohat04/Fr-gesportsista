@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0usiTfNwiShvV5d2cbnOEsXR1ZLMmc8zQZe4FMPqZ6aCX/fSM8mulppfu3ru1GGNxSVwDhziRTVpRyqi4fJy8Q==",
+  "dgSpecHash": "BFwwuH8ApBFS0GKSQiApKIzi2Y2SOuPwoWk5eCe1/tVlBjq3yKlFqmAspr02A2qoQIs3zEvGkEuwnig2DpDxfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ozkoc.rohat\\Documents\\programering\\3 Programmering\\Frågesportsista\\Frågesportsista\\Frågesportsista.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\ozkoc.rohat\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\ozkoc.rohat\\Downloads\\Fr-gesportsista-master\\Fr-gesportsista-master\\Frågesportsista\\Frågesportsista.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
